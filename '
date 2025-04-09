@@ -1,0 +1,29 @@
+## 📦 Requirements
+
+- `curl`
+- `ps`, `top`, `awk`, `sensors` (install with `lm-sensors`)
+- A Telegram bot and a chat ID
+
+### 1. 🔧 Edit the Script
+Open the script `track.sh` and **manually set** your Telegram credentials:
+
+```bash
+# Inside track.sh — replace with your actual values
+TG_BOT_TOKEN=""
+TG_CHAT_ID=""
+```
+
+How to Get Telegram Bot Token
+- Open Telegram and message @BotFather.
+- Use /start, then /newbot to create a new bot.
+- Follow the prompts
+- Copy this and paste it into `TG_BOT_TOKEN` in your script.
+
+How to Get Your Chat ID
+- Message your bot once (say "Hi").
+- Then run this in your terminal (replacing your token):
+```bash
+curl https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
+```
+
+
