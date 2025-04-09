@@ -32,3 +32,5 @@ curl https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
 ```
 Look for a field like "chat":{"id":123456789,...}
 That number is your `TG_CHAT_ID`
+
+![](kopimi-sm.png)
